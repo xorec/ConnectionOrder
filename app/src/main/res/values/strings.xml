@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConnectionOrder</string>
+    <string name="order_fragment_menu_title">Заявка на подключение</string>
+    <string name="order_fragment_choose_street">Выберите улицу</string>
+    <string name="order_fragment_choose_house">Выберите дом</string>
+    <string name="order_fragment_house">Дом</string>
+    <string name="order_fragment_building">Корпус</string>
+    <string name="order_fragment_apartment">Квартира</string>
+    <string name="order_fragment_send">Отправить</string>
+    <string name="order_fragment_streets_loading_error">Произошла ошибка при загрузке данных улиц</string>
+</resources>

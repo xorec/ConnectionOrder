@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_color">#00A4FF</color>
+    <color name="day_window_background_color">#EEEEEE</color>
+    <color name="night_window_background_color">#2E2E2E</color>
+    <color name="white">#FFFFFF</color>
+</resources>

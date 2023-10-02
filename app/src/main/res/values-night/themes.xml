@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.ConnectionOrder" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_color</item>
+        <item name="android:windowBackground">@color/night_window_background_color</item>
+        <item name="android:navigationBarColor">?android:windowBackground</item>
+        <item name="android:statusBarColor">?android:windowBackground</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/order_fragment_tb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/order_fragment_menu_title"
+            android:paddingRight="12dp"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="?attr/colorPrimary">
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="8dp"
+                app:contentPaddingTop="16dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/order_fragment_street_actv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:hint="@string/order_fragment_choose_street"
+                        android:completionThreshold="3">
+                    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/order_fragment_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/order_fragment_house_til"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/order_fragment_house">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/order_fragment_house_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Space
+                            android:id="@+id/order_fragment_space_1"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content">
+                        </Space>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/order_fragment_building_til"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLength="4"
+                            android:hint="@string/order_fragment_building">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/order_fragment_building_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="6"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Space
+                            android:id="@+id/order_fragment_space_2"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content">
+                        </Space>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/order_fragment_apartment_til"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/order_fragment_apartment">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/order_fragment_apartment_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/order_fragment_send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/order_fragment_send"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="8dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
